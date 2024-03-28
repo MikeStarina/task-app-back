@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "passports",
+  "info": {
+    "singularName": "passport",
+    "pluralName": "passports",
+    "displayName": "passports",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "pattern": {
+      "type": "string"
+    },
+    "model_name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "sizes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::size.size"
+    },
+    "model_type": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::model-type.model-type"
+    }
+  }
+}

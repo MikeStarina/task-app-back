@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "model_types",
+  "info": {
+    "singularName": "model-type",
+    "pluralName": "model-types",
+    "displayName": "modelTypes"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}
