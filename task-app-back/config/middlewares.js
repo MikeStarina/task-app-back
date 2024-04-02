@@ -7,7 +7,7 @@ module.exports = [
     config: {
       enabled: true,
       header: '*',
-      origin: ['http://localhost:5173', 'http://localhost:3000', 'http://localhost:1337']
+      origin: ['http://localhost:5173', 'http://localhost:3000', 'http://localhost:1337', 'https://tasks-app-xi-two.vercel.app']
     }
   },
   'strapi::poweredBy',
