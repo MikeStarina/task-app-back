@@ -862,9 +862,7 @@ export interface ApiPassportPassport extends Schema.CollectionType {
     draftAndPublish: false;
   };
   attributes: {
-    name: Attribute.String;
-    pattern: Attribute.String;
-    model_name: Attribute.String;
+    name: Attribute.String & Attribute.Required;
     description: Attribute.Text;
     sizes: Attribute.Relation<
       'api::passport.passport',
@@ -876,6 +874,7 @@ export interface ApiPassportPassport extends Schema.CollectionType {
       'oneToOne',
       'api::model-type.model-type'
     >;
+    code: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
